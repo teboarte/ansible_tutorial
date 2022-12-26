@@ -1,0 +1,10 @@
+---
+
+- hosts: k3s
+  become: true
+  tasks:
+
+  - name: apt install apache2 package
+    apt:
+      name: apache2
+        
